@@ -1,0 +1,6 @@
+{
+    "version" : 2019120201,
+    "api": {
+        "endpoint": "https://%s.api.staging.thirst.io/"
+    }
+}

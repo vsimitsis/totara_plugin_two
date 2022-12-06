@@ -1,0 +1,15 @@
+{
+    "name" : "buildEmpire/thirst_moodle",
+    "description" : "Thirst plugin for moodle/totara.",
+    "type": "project",
+
+    "require": {
+        "php": ">=7.0.0",
+        "guzzlehttp/guzzle": "^6.0"
+    },
+    "autoload" : {
+        "psr-4": {
+          "ThirstPlugin\\" : "./classes"
+        }
+      }
+}

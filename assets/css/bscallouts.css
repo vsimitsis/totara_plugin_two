@@ -1,0 +1,47 @@
+/**
+ * Bootstrap callouts
+ */
+.bs-callout {
+  padding: 20px 15px;
+  margin: 10px 0 20px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+}
+
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #565656;
+}
+
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.bs-callout + .bs-callout {
+  margin-top: -5px;
+}
+
+.bs-callout.bs-callout-default {
+  border-left-color: #6c757d;
+}
+
+.bs-callout.bs-callout-primary {
+  border-left-color: #007bff;
+}
+
+.bs-callout.bs-callout-success {
+  border-left-color: #28a745;
+}
+
+.bs-callout.bs-callout-danger {
+  border-left-color: #dc3545;
+}
+
+.bs-callout.bs-callout-warning {
+  border-left-color: #ffc107;
+}
+
+.bs-callout.bs-callout-info {
+  border-left-color: #17a2b8;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/thirst/db" VERSION="20120122" COMMENT="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd">
+    <TABLES>
+        <TABLE NAME="thirst_access_tokens" COMMENT="Thirst API access tokens.">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="added_by" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="token_type" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="access_token" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="refresh_token" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="expires_at" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="organisation_name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="organisation_subdomain" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="created_at" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+            </FIELDS>
+
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+
+            <INDEXES>
+                <INDEX NAME="organisation_subdomain_uniqueidx" UNIQUE="true" FIELDS="organisation_subdomain"/>
+            </INDEXES>
+
+        </TABLE>
+    </TABLES>
+</XMLDB>
